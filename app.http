@@ -2,7 +2,7 @@ POST http://localhost:3000/register/
 Content-Type : application/json
 
 {
-  "username": "adam_richard",
+  "username": "adam_richards45",
   "password": "richard_567",
   "name": "Adam Richard",
   "gender": "male"
@@ -24,8 +24,33 @@ Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpv
 
 ###
 
-
-DELETE http://localhost:3000/delete/14/
+GET http://localhost:3000/user/following/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEyMzExMzM4fQ.ETSXQ4tPJn9x5lP_n6ysptxmxVifrmzJmnnAlAYtyF4
 
 ###
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEyMzA5NTc5fQ.fQlLas5It14dL_LGzeHHYWHhhhFHgkwRXlwVxSgLp9M
+
+GET http://localhost:3000/user/followers/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEyMzExMzM4fQ.ETSXQ4tPJn9x5lP_n6ysptxmxVifrmzJmnnAlAYtyF4
+###
+
+GET http://localhost:3000/tweets/3/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEyMzExMzM4fQ.ETSXQ4tPJn9x5lP_n6ysptxmxVifrmzJmnnAlAYtyF4
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEyMzExMzM4fQ.ETSXQ4tPJn9x5lP_n6ysptxmxVifrmzJmnnAlAYtyF4
+
+###
+
+POST http://localhost:3000/user/tweets/
+Content-Type : application/json
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEyMzExMzM4fQ.ETSXQ4tPJn9x5lP_n6ysptxmxVifrmzJmnnAlAYtyF4
+
+{
+   "tweet": "The Mornings..."
+}
+
+DELETE http://localhost:3000/tweets/2/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzEyMzExMzM4fQ.ETSXQ4tPJn9x5lP_n6ysptxmxVifrmzJmnnAlAYtyF4
+
+###
